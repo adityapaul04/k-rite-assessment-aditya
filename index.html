@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Example</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        class="stylesheet">
+</head>
+
+<body>
+    <div class="hamburgerContainer" style="display: flex;">
+        <img class="hamburger" src="./assets/hamburger.svg" alt="">
+    </div>
+    <div class="container">
+        <div class="left-section">
+            <div class="sidebar">
+                <div class="close">
+                    <img src="./assets/close.svg" alt="">
+                </div>
+                <div class="sidebar-top">
+                    <div class="company-info">
+                        <img class="company-logo" src="./assets/logo.png" alt="">
+                        <div class="company-desc">
+                            <div class="company-name">INC</div>
+                            <div class="company-name-long">InnovativeHub</div>
+                        </div>
+                    </div>
+                    <img class="user-logo" src="./assets/userlogo.png" alt="">
+                </div>
+                <div class="sidebar-teams-section">
+                    <div class="team">
+                        <div class="team-info">
+                            <i class="fa-solid fa-pen-nib fa-rotate-90"></i>
+                            <div class="team-name">Design Team</div>
+                        </div>
+                        <div class="team-count">
+                            <img src="./assets/command-symbol.png" alt="" width="12px">+1
+                        </div>
+                    </div>
+                    <div class="team">
+                        <div class="team-info">
+                            <i class="fa-solid fa-bullhorn"></i>
+                            <div class="team-name">Marketing Team</div>
+                        </div>
+                        <div class="team-count">
+                            <img src="./assets/command-symbol.png" alt="" width="12px">+2
+                        </div>
+                    </div>
+                    <div class="team">
+                        <div class="team-info">
+                            <i class="fa-solid fa-code"></i>
+                            <div class="team-name">Development Team</div>
+                        </div>
+                        <div class="team-count">
+                            <img src="./assets/command-symbol.png" alt="" width="12px" style="color: #898b8f">+3
+                        </div>
+                    </div>
+                    <hr class="line">
+                    <div class="team">
+                        <div class="team-info">
+                            <i class="fa-regular fa-square-plus"></i>
+                            <div class="team-name">Create a Team</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-folders-section">
+                    <div class="folders-heading">
+                        <div class="section-heading">FOLDERS</div>
+                        <i class="fa-solid fa-plus" style="color: #75777c;"></i>
+                    </div>
+                    <div class="folder-container">
+                        <div class="folder" id="products-folder">
+                            <i class="fa-regular fa-folder"></i>
+                            <div class="folder-name">Products</div>
+                        </div>
+                        <i class="fa-solid fa-sort-down" style="color: #75777c;"></i>
+                        <!-- Sub-folders -->
+                        <div class="subfolders" id="products-subfolders">
+                            <div class="folder">
+                                <i class="fa-regular fa-folder"></i>
+                                <div class="folder-name">Roadmap</div>
+                            </div>
+                            <div class="folder">
+                                <i class="fa-regular fa-folder"></i>
+                                <div class="folder-name">Feedback</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="folder-container">
+                        <div class="folder">
+                            <i class="fa-regular fa-folder"></i>
+                            <div class="folder-name">Sales </div>
+                        </div>
+                        <i class="fa-solid fa-sort-down" style="color: #75777c;"></i>
+                        <div class="subfolders" id="products-subfolders">
+                            <div class="folder">
+                                <i class="fa-regular fa-folder"></i>
+                                <div class="folder-name">Sales Folder 1</div>
+                            </div>
+                            <div class="folder">
+                                <i class="fa-regular fa-folder"></i>
+                                <div class="folder-name">Sales Folder 2</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="folder-container">
+                        <div class="folder">
+                            <i class="fa-regular fa-folder"></i>
+                            <div class="folder-name">Design </div>
+                        </div>
+                        <i class="fa-solid fa-sort-down" style="color: #75777c;"></i>
+                        <div class="subfolders" id="products-subfolders">
+                            <div class="folder">
+                                <i class="fa-regular fa-folder"></i>
+                                <div class="folder-name">Design Folder 1</div>
+                            </div>
+                            <div class="folder">
+                                <i class="fa-regular fa-folder"></i>
+                                <div class="folder-name">Design Folder 2</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="folder-container">
+                        <div class="folder">
+                            <i class="fa-regular fa-folder"></i>
+                            <div class="folder-name">Office </div>
+                        </div>
+                        <i class="fa-solid fa-sort-down" style="color: #75777c;"></i>
+                    </div>
+                    <div class="folder-container">
+                        <div class="folder">
+                            <i class="fa-regular fa-folder"></i>
+                            <div class="folder-name">Legal </div>
+                        </div>
+                        <i class="fa-solid fa-sort-down" style="color: #75777c;"></i>
+                    </div>
+                </div>
+                <div class="sidebar-bottom">
+                    <div class="other-item">
+                        <div>
+                            <i class="fa-solid fa-user-plus"></i>
+                            Invite Teammates
+                        </div>
+                        <div class="team-num">
+                            0/6
+                        </div>
+                    </div>
+                    <div class="other-item">
+                        <div>
+                            <i class="fa-regular fa-circle-question"></i>
+                            Help and First Steps
+                        </div>
+                    </div>
+                    <div class="trial">
+                        <div class="seven">7</div> days left for free trial<button class="add-billing-btn">Add
+                            Billing</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="main-content">
+                <header>
+                    <div class="header">
+                        <h3>Products</h3>
+                        <div class="Search-box">
+                            <form id="searchForm" class="Search-tab">
+                                <i class="fa fa-search"></i>
+                                <input type="search" id="searchInput" required class="search" placeholder="Search by brand">
+                            </form>
+                            <div class="sideIcon">
+                                <i class="fa-regular fa-comments chat"></i>
+                                <i class="fa-solid fa-gear setting"></i>
+                            </div>
+                        </div>
+                </header>
+
+                <div class="main-container">
+                    <div class="category-Item">
+                        <div class="left-category">
+                            <div><button><i class="fa-solid fa-table-cells-large"></i></i> All brands <i
+                                        class="fa-solid fa-caret-down"></i></button></div>
+                            <div><button>Desk <i class="fa-solid fa-caret-down"></i></button></div>
+                            <div><button>Tags <i class="fa-solid fa-caret-down"></i></button></div>
+                            <div><button id="sortButton"><i class="fa-solid fa-arrow-down-wide-short"></i>
+                                    Sort</button></div>
+                            <div><button><i class="fa-solid fa-filter"></i> Filter</button></div>
+                        </div>
+                        <div class="right-category">
+                            <div><button><i class="fa-solid fa-headset"></i> Meeting</button></div>
+                            <div><button><i class="fa-solid fa-cloud-arrow-up"></i> Import/Export</button></div>
+                        </div>
+                    </div>
+                    <div class="tableData">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Brand</th>
+                                    <th class="disc-head">Description</th>
+                                    <th class="Member">Member</th>
+                                    <th>Category</th>
+                                    <th class="Head-tag">Tags</th>
+                                    <th>Next Meeting</th>
+                                    <th class="plus">+</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="brand">
+                                        <input type="checkbox" name="" id="" onchange="highlightRow(this)">
+                                        <img src="images/wix.png" alt="wix" class="brand-logo">
+                                        <p class="brand-Name"> Wix</p>
+                                    </td>
+                                    <td class="table-Desc">Website builder platform..</td>
+                                    <td class="user-Img-Container Member">
+                                        <img class="user1 userImg" src="images/userOne.png" alt="User1">
+                                        <img class="user2 userImg" src="images/userTwo.png" alt="User2">
+                                        <img class="user3 userImg" src="images/userThree.jpg" alt="User3">
+                                    </td>
+                                    <td class="table-category-head">
+                                        <p class="table-category" id="Automation">Automation</p>
+                                    </td>
+                                    <td id="tag-head" class="Head-tag">
+                                        <p class="tag">#DigitalTranformation</p>
+                                        <p class="tag">#Creativity</p>
+                                    </td>
+                                    <td>
+                                        <p class="time" id="today">in 30 minutes</p>
+                                    </td>
+                                    <td></td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td class="brand">
+                                        <input type="checkbox" name="" id="" onchange="highlightRow(this)">
+                                        <img src="images/shopify.webp" alt="wix" class="brand-logo">
+                                        <p class="brand-Name"> Shopify</p>
+                                    </td>
+                                    <td class="table-Desc">E-commerce platform..</td>
+                                    <td class="user-Img-Container Member">
+                                        <img class="user1 userImg" src="images/userOne.png" alt="User1">
+                                        <img class="user2 userImg" src="images/userTwo.png" alt="User2">
+                                        <img class="user3 userImg" src="images/userThree.jpg" alt="User3">
+                                    </td>
+                                    <td class="table-category-head">
+                                        <p class="table-category" id="E-commerse">E-commerce</p>
+                                        <p class="table-category" id="Publising">B2B</p>
+                                    </td>
+                                    <td id="tag-head">
+                                        <p class="tag">#OnlineShopping</p>
+                                        <p class="tag">#Creativity</p>
+                                    </td>
+                                    <td>
+                                        <p class="time" id="tommorow">Tommorrow</p>
+                                    </td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="brand">
+                                        <input type="checkbox" name="" id="" onchange="highlightRow(this)">
+                                        <img src="images/mailChirmp.webp" alt="wix" class="brand-logo">
+                                        <p class="brand-Name"> Mailchimp</p>
+                                    </td>
+                                    <td class="table-Desc">Email marketing and automation platform..</td>
+                                    <td class="user-Img-Container Member">
+                                        <img class="user1 userImg" src="images/userOne.png" alt="User1">
+                                        <img class="user2 userImg" src="images/userTwo.png" alt="User2">
+                                        <img class="user3 userImg" src="images/userThree.jpg" alt="User3">
+                                    </td>
+                                    <td class="table-category-head">
+                                        <p class="table-category" id="Automation">SAAS</p>
+                                    </td>
+                                    <td id="tag-head">
+                                        <p class="tag">#TechInnovation</p>
+                                        <p class="tag">#DripMarketing</p>
+                                    </td>
+                                    <td>
+                                        <p class="time" id="tommorow">Tommorow</p>
+                                    </td>
+                                    <td></td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td class="brand">
+                                        <input type="checkbox" name="" id="" onchange="highlightRow(this)">
+                                        <img src="images/PayPal_logo.png" alt="wix" class="brand-logo">
+                                        <p class="brand-Name"> PayPal</p>
+                                        <div class="chat-img">
+                                            <i class="fa-regular fa-comments"></i>
+                                            <p>2</p>
+                                        </div>
+                                    </td>
+                                    <td class="table-Desc">Online payment processor..</td>
+                                    <td class="user-Img-Container Member">
+                                        <img class="user1 userImg" src="images/userOne.png" alt="User1">
+                                        <img class="user2 userImg" src="images/userTwo.png" alt="User2">
+                                        <img class="user3 userImg" src="images/userThree.jpg" alt="User3">
+                                    </td>
+                                    <td class="table-category-head">
+                                        <p class="table-category" id="Marketplace">Marketplace</p>
+                                    </td>
+                                    <td id="tag-head">
+                                        <p class="tag">#BuySellOnline</p>
+                                        <p class="tag">#Payment</p>
+                                    </td>
+                                    <td>
+                                        <p class="time" id="today">in 6 Hours</p>
+                                    </td>
+                                    <td></td>
+                                </tr>
+
+
+                                <tr>
+                                    <td class="brand">
+                                        <input type="checkbox" name="" id="" onchange="highlightRow(this)">
+                                        <img src="images/Disney.webp" alt="Disney" class="brand-logo">
+                                        <p class="brand-Name"> Disney</p>
+                                        <div class="chat-img">
+                                            <i class="fa-regular fa-comments"></i>
+                                            <p>7</p>
+                                        </div>
+                                    </td>
+                                    <td class="table-Desc">Entertainment conglomerate..</td>
+                                    <td class="user-Img-Container Member">
+                                        <img class="user1 userImg" src="images/userOne.png" alt="User1">
+                                        <img class="user2 userImg" src="images/userTwo.png" alt="User2">
+                                        <img class="user3 userImg" src="images/userThree.jpg" alt="User3">
+                                    </td>
+                                    <td class="table-category-head">
+                                        <p class="table-category" id="b2b">B2B</p>
+                                        <p class="table-category" id="b2c">B2C</p>
+                                    </td>
+                                    <td id="tag-head">
+                                        <p class="tag">#BusinessPartners</p>
+                                        <p class="tag">#Payment</p>
+                                    </td>
+                                    <td>
+                                        <p class="time">in 6 Hours</p>
+                                    </td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="brand">
+                                        <input type="checkbox" name="" id="" onchange="highlightRow(this)">
+                                        <img src="images/intercom.png" alt="Intercom" class="brand-logo">
+                                        <p class="brand-Name"> Intercom</p>
+                                    </td>
+                                    <td class="table-Desc">New way for internet businesses to communicate with customers, personally.</td>
+                                    <td class="user-Img-Container Member">
+                                        <img class="user1 userImg" src="images/userOne.png" alt="User1">
+                                        <img class="user2 userImg" src="images/userTwo.png" alt="User2">
+                                        <img class="user3 userImg" src="images/userThree.jpg" alt="User3">
+                                    </td>
+                                    <td class="table-category-head">
+                                        <p class="table-category" id="b2b">Tech</p>
+                                        <p class="table-category" id="b2c">SAAS</p>
+                                    </td>
+                                    <td id="tag-head">
+                                        <p class="tag">#SmartFinance</p>
+                                        <p class="tag">#Payment</p>
+                                    </td>
+                                    <td>
+                                        <p class="time">in 6 Hours</p>
+                                    </td>
+                                    <td></td>
+                                </tr>
+
+
+                                <tr>
+                                    <td class="brand">
+                                        <input type="checkbox" name="" id="" onchange="highlightRow(this)">
+                                        <img src="images/google_PNG3.webp" alt="google" class="brand-logo">
+                                        <p class="brand-Name"> Google</p>
+                                        <div class="chat-img">
+                                            <i class="fa-regular fa-comments"></i>
+                                            <p>8</p>
+                                        </div>
+                                    </td>
+                                    <td class="table-Desc">Multinational technology company...</td>
+                                    <td class="user-Img-Container Member">
+                                        <img class="user1 userImg" src="images/userOne.png" alt="User1">
+                                        <img class="user2 userImg" src="images/userTwo.png" alt="User2">
+                                        <img class="user3 userImg" src="images/userThree.jpg" alt="User3">
+                                    </td>
+                                    <td class="table-category-head">
+                                        <p class="table-category" id="Finence">Finance</p>
+                                        <p class="table-category" id="Automation">Automation</p>
+                                    </td>
+                                    <td id="tag-head">
+                                        <p class="tag">#SmarthFinance</p>
+                                        <p class="tag">#Workflow</p>
+                                    </td>
+                                    <td>
+                                        <p class="time" id="today">in 30 minutes</p>
+                                    </td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="brand">
+                                        <input type="checkbox" name="" id="" onchange="highlightRow(this)">
+                                        <img src="images/evernote.png" alt="Evernote" class="brand-logo">
+                                        <p class="brand-Name">Evernote</p>
+                                    </td>
+                                    <td class="table-Desc">Evernote makes it easy to collaborate on projects. </td>
+                                    <td class="user-Img-Container Member">
+                                        <img class="user1 userImg" src="images/userOne.png" alt="User1">
+                                        <img class="user2 userImg" src="images/userTwo.png" alt="User2">
+                                        <img class="user3 userImg" src="images/userThree.jpg" alt="User3">
+                                    </td>
+                                    <td class="table-category-head">
+                                        <p class="table-category" id="b2b">B2B</p>
+                                        <p class="table-category" id="b2c">B2C</p>
+                                    </td>
+                                    <td id="tag-head">
+                                        <p class="tag">#BuySellOnline</p>
+                                        <p class="tag">#Payment</p>
+                                    </td>
+                                    <td>
+                                        <p class="time">in 6 Hours</p>
+                                    </td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="brand">
+                                        <input type="checkbox" name="" id="" onchange="highlightRow(this)">
+                                        <img src="images/Microsoft_icon.svg.webp" alt="Microsoft" class="brand-logo">
+                                        <p class="brand-Name"> Microsoft</p>
+                                    </td>
+                                    <td class="table-Desc">Technology company specializing..</td>
+                                    <td class="user-Img-Container Member">
+                                        <img class="user1 userImg" src="images/userOne.png" alt="User1">
+                                        <img class="user2 userImg" src="images/userTwo.png" alt="User2">
+                                        <img class="user3 userImg" src="images/userThree.jpg" alt="User3">
+                                    </td>
+                                    <td class="table-category-head">
+                                        <p class="table-category" id="Publising">Publising</p>
+                                        <p class="table-category" id="b2c">B2C</p>
+                                    </td>
+                                    <td id="tag-head">
+                                        <p class="tag">#RetailIT</p>
+                                        <p class="tag">#B2CMarket</p>
+                                    </td>
+                                    <td>
+                                        <p class="time" id="canceled">No Contact</p>
+                                    </td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="brand">
+                                        <input type="checkbox" name="" id="" onchange="highlightRow(this)">
+                                        <img src="images/invision.svg" alt="Invision" class="brand-logo">
+                                        <p class="brand-Name">Invision</p>
+                                    </td>
+                                    <td class="table-Desc">InVision is the online whiteboard</td>
+                                    <td class="user-Img-Container Member">
+                                        <img class="user1 userImg" src="images/userOne.png" alt="User1">
+                                        <img class="user2 userImg" src="images/userTwo.png" alt="User2">
+                                        <img class="user3 userImg" src="images/userThree.jpg" alt="User3">
+                                    </td>
+                                    <td class="table-category-head">
+                                        <p class="table-category" id="b2b">B2B</p>
+                                        <p class="table-category" id="b2c">B2C</p>
+                                    </td>
+                                    <td id="tag-head">
+                                        <p class="tag">#BuySellOnline</p>
+                                        <p class="tag">#Payment</p>
+                                    </td>
+                                    <td>
+                                        <p class="time">in 6 Hours</p>
+                                    </td>
+                                    <td></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="botoom-btn">
+                    <button><i class="fa-regular fa-square-check"></i> Selected</button>
+                    <button><i class="fa-solid fa-box-archive"></i> Archive</button>
+                    <button id="Delete"><i class="fa-solid fa-trash"></i> Delete</button>
+                    <button>More <i class="fa-solid fa-caret-down"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
